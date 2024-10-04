@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Mağara extends Mekan {
+public class Magara extends Mekan {
 	private boolean isYemek;
 	private ArrayList<Zombi> zombiler;
 	Scanner scn = new Scanner(System.in);
 	private char secim;
 
-	public Mağara(int zombiSayisi, Karakter karakter) {
+	public Magara(int zombiSayisi, Karakter karakter) {
 		super("Mağara");
 		zombiler = new ArrayList<>();
 		isYemek = false;
@@ -21,7 +21,7 @@ public class Mağara extends Mekan {
 			savas(karakter);
 		} else if (secim == 'k' || secim == 'K') {
 			mekanDegis("Güvenli Ev");
-			GüvenliEv gvnEv = new GüvenliEv(karakter);
+			GuvenliEv gvnEv = new GuvenliEv(karakter);
 		}
 	}
 	
@@ -43,7 +43,7 @@ public class Mağara extends Mekan {
 				System.out.println("Tüm zombileri yok ederek yemek ganimetini kazandınız.");
 				karakter.setYemek(isYemek);
 				mekanDegis("Güvenli Ev");
-				GüvenliEv gvnEv = new GüvenliEv(karakter);
+				GuvenliEv gvnEv = new GuvenliEv(karakter);
 			}
 			else if(karakter.getSaglik() <= 0)
 			{

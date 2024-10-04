@@ -1,24 +1,24 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class GüvenliEv extends Mekan {
+public class GuvenliEv extends Mekan {
 	private int secim;
 	private boolean isFinish;
 	Scanner scn = new Scanner(System.in);
 
-	public GüvenliEv(Karakter karakter) {
+	public GuvenliEv(Karakter karakter) {
 		super("Güvenli Ev");
 		isFinish = karakter.isOdun() && karakter.isWater() && karakter.isYemek();
 		if (isFinish) {
 			System.err.println("TEBRİKLER! KRALLIĞI KURTARDINIZ!");
 		}
-		else if (karakter instanceof Savaşçı) {
+		else if (karakter instanceof Savasci) {
 			karakter.setSaglik(100);
 			System.out.println("Güvenli eve hoşgeldin Savaşçı! Sağlığın yenilendi: " + karakter.getSaglik());
-		} else if (karakter instanceof Okçu) {
+		} else if (karakter instanceof Okcu) {
 			karakter.setSaglik(80);
 			System.out.println("Güvenli eve hoşgeldin Okçu! Sağlığın yenilendi: " + karakter.getSaglik());
-		} else if (karakter instanceof Şövalye) {
+		} else if (karakter instanceof Sovalye) {
 			karakter.setSaglik(120);
 			System.out.println("Güvenli eve hoşgeldin Şövalye! Sağlığın yenilendi: " + karakter.getSaglik());
 		}
@@ -35,7 +35,7 @@ public class GüvenliEv extends Mekan {
 			}
 			if (secim == 1) {
 				mekanDegis("Mağaza");
-				Mağaza magaza = new Mağaza(karakter);
+				Magaza magaza = new Magaza(karakter);
 				break;
 			} else if (secim == 2) {
 				mekanDegis("Orman");
@@ -56,7 +56,7 @@ public class GüvenliEv extends Mekan {
 				int sayi;
 				Random rnd = new Random();
 				sayi = rnd.nextInt(3) + 1;
-				Mağara magara = new Mağara(sayi, karakter);
+				Magara magara = new Magara(sayi, karakter);
 				break;
 			} else {
 				System.err.println("Yanlış seçim! Tekrar deneyin.");

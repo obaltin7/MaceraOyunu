@@ -3,16 +3,16 @@ import java.util.ArrayList;
 public class Karakter {
 	private int saglik;
 	private Silah silah;
-	private Zırh zırh;
+	private Zirh zırh;
 	private String isim;
 	private ArrayList<Silah> ekstraSilahlar;
-	private ArrayList<Zırh> ekstraZırhlar;
+	private ArrayList<Zirh> ekstraZırhlar;
 	private boolean isOdun;
 	private boolean isWater;
 	private boolean isYemek;
 	
 
-	public Karakter(int saglik, Silah silah, Zırh zırh, String isim) {
+	public Karakter(int saglik, Silah silah, Zirh zırh, String isim) {
 		super();
 		this.saglik = saglik;
 		this.silah = silah;
@@ -38,11 +38,11 @@ public class Karakter {
 		this.silah = silah;
 	}
 
-	public Zırh getZırh() {
+	public Zirh getZırh() {
 		return zırh;
 	}
 
-	public void setZırh(Zırh zırh) {
+	public void setZırh(Zirh zırh) {
 		this.zırh = zırh;
 	}
 	
@@ -58,11 +58,11 @@ public class Karakter {
 		this.ekstraSilahlar = ekstraSilahlar;
 	}
 	
-	public ArrayList<Zırh> getEkstraZırhlar() {
+	public ArrayList<Zirh> getEkstraZırhlar() {
 		return ekstraZırhlar;
 	}
 	
-	public void setEkstraZırhlar(ArrayList<Zırh> ekstraZırhlar) {
+	public void setEkstraZırhlar(ArrayList<Zirh> ekstraZırhlar) {
 		this.ekstraZırhlar = ekstraZırhlar;
 	}
 	

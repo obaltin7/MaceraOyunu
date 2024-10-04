@@ -1,19 +1,19 @@
 
-public class Şövalye extends Karakter {
-	private Mızrak mızrak;
-	private AğırZırh ağırZırh;
+public class Sovalye extends Karakter {
+	private Mizrak mızrak;
+	private AgirZirh ağırZırh;
 
-	public Şövalye(Mızrak mızrak, AğırZırh ağırZırh) {
+	public Sovalye(Mizrak mızrak, AgirZirh ağırZırh) {
 		super(120, mızrak, ağırZırh, "Şövalye");
 		this.mızrak = mızrak;
 		this.ağırZırh = ağırZırh;
 	}
 
-	public Mızrak getMızrak() {
+	public Mizrak getMızrak() {
 		return mızrak;
 	}
 
-	public AğırZırh getAğırZırh() {
+	public AgirZirh getAğırZırh() {
 		return ağırZırh;
 	}
 

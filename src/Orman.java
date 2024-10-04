@@ -21,7 +21,7 @@ public class Orman extends Mekan {
 			savas(karakter);
 		} else if (secim == 'k' || secim == 'K') {
 			mekanDegis("Güvenli Ev");
-			GüvenliEv gvnEv = new GüvenliEv(karakter);
+			GuvenliEv gvnEv = new GuvenliEv(karakter);
 		}
 	}
 	
@@ -44,7 +44,7 @@ public class Orman extends Mekan {
 				System.out.println("Tüm vampirleri yok ederek odun ganimetini kazandınız.");
 				karakter.setOdun(isOdun);
 				mekanDegis("Güvenli Ev");
-				GüvenliEv gvnEv = new GüvenliEv(karakter);
+				GuvenliEv gvnEv = new GuvenliEv(karakter);
 			}
 			else if(karakter.getSaglik() <= 0)
 			{

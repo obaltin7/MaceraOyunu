@@ -43,7 +43,7 @@ public class Canavar {
 		if (saglik > 0) {
 			int ekstraZirhKorumasi = 0;
 			if (!karakter.getEkstraZırhlar().isEmpty()) {
-				for (Zırh ekstraZırh : karakter.getEkstraZırhlar()) {
+				for (Zirh ekstraZırh : karakter.getEkstraZırhlar()) {
 					ekstraZirhKorumasi += ekstraZırh.getSavunmaGucu();
 				}
 			}

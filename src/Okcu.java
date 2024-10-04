@@ -1,9 +1,9 @@
 
-public class Okçu extends Karakter{
+public class Okcu extends Karakter{
 	private Yay yay;
-	private OrtaZırh ortaZırh;
+	private OrtaZirh ortaZırh;
 	
-	public Okçu(Yay yay, OrtaZırh ortaZırh) {
+	public Okcu(Yay yay, OrtaZirh ortaZırh) {
 		super(80, yay, ortaZırh,"Okçu");
 		this.yay = yay;
 		this.ortaZırh = ortaZırh;
@@ -14,7 +14,7 @@ public class Okçu extends Karakter{
 	}
 
 
-	public OrtaZırh getOrtaZırh() {
+	public OrtaZirh getOrtaZırh() {
 		return ortaZırh;
 	}
 

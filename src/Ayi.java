@@ -1,7 +1,7 @@
 
-public class Ayı extends Canavar {
+public class Ayi extends Canavar {
 
-	public Ayı() {
+	public Ayi() {
 		super("Ayı",20,22,"Pençe");
 	}
 

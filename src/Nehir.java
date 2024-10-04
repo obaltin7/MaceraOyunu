@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Nehir extends Mekan {
 	private boolean isWater;
-	private ArrayList<Ayı> ayılar;
+	private ArrayList<Ayi> ayılar;
 	Scanner scn = new Scanner(System.in);
 	private char secim;
 	
@@ -13,7 +13,7 @@ public class Nehir extends Mekan {
 		isWater = false;
 		
 		for (int i = 0; i < ayiSayisi; i++) {
-			ayılar.add(new Ayı());
+			ayılar.add(new Ayi());
 		}
 		System.out.println("Nehre hoşgeldin "+karakter.getIsim()+ "! Nehirde " + ayiSayisi
 				+ " tane ayı var. Savaşmak için S/s, kaçmak için K/k' ye bas.");
@@ -22,7 +22,7 @@ public class Nehir extends Mekan {
 			savas(karakter);
 		} else if (secim == 'k' || secim == 'K') {
 			mekanDegis("Güvenli Ev");
-			GüvenliEv gvnEv = new GüvenliEv(karakter);
+			GuvenliEv gvnEv = new GuvenliEv(karakter);
 		}
 	}
 	
@@ -44,7 +44,7 @@ public class Nehir extends Mekan {
 				System.out.println("Tüm ayıları yok ederek su ganimetini kazandınız.");
 				karakter.setWater(isWater);
 				mekanDegis("Güvenli Ev");
-				GüvenliEv gvnEv = new GüvenliEv(karakter);
+				GuvenliEv gvnEv = new GuvenliEv(karakter);
 			}
 			else if(karakter.getSaglik() <= 0)
 			{

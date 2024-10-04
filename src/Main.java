@@ -28,25 +28,25 @@ public class Main {
 				System.err.println("Hatalı seçim yaptınız! Karakteriniz: Savaşçı olarak seçildi.");	
 			}
 			if (secim == 1) {
-				Kılıç k1 = new Kılıç();
-				HafifZırh hz1 = new HafifZırh();
-				Savaşçı savasci = new Savaşçı(k1, hz1);
+				Kilic k1 = new Kilic();
+				HafifZirh hz1 = new HafifZirh();
+				Savasci savasci = new Savasci(k1, hz1);
 				System.out.println(savasci);
-				GüvenliEv gvnEv = new GüvenliEv(savasci);
+				GuvenliEv gvnEv = new GuvenliEv(savasci);
 				isFinish = true;
 			} else if (secim == 2) {
 				Yay y1 = new Yay();
-				OrtaZırh oz1 = new OrtaZırh();
-				Okçu okcu = new Okçu(y1, oz1);
+				OrtaZirh oz1 = new OrtaZirh();
+				Okcu okcu = new Okcu(y1, oz1);
 				System.out.println(okcu);
-				GüvenliEv gvnEv = new GüvenliEv(okcu);
+				GuvenliEv gvnEv = new GuvenliEv(okcu);
 				isFinish = true;
 			} else if (secim == 3) {
-				Mızrak m1 = new Mızrak();
-				AğırZırh az1 = new AğırZırh();
-				Şövalye sövalye = new Şövalye(m1, az1);
+				Mizrak m1 = new Mizrak();
+				AgirZirh az1 = new AgirZirh();
+				Sovalye sövalye = new Sovalye(m1, az1);
 				System.out.println(sövalye);
-				GüvenliEv gvnEv = new GüvenliEv(sövalye);
+				GuvenliEv gvnEv = new GuvenliEv(sövalye);
 				isFinish = true;
 			} else {
 				System.err.println("Hatalı seçim! Tekrar deneyin.");

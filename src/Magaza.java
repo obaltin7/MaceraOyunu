@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Mağaza extends Mekan {
+public class Magaza extends Mekan {
 	private ArrayList<Silah> ekstraSilahlar;
-	private ArrayList<Zırh> ekstraZırhlar;
+	private ArrayList<Zirh> ekstraZırhlar;
 	private ArrayList<String> ekstraAlınanlar;
 
 	Scanner scn = new Scanner(System.in);
 
-	public Mağaza(Karakter karakter) {
+	public Magaza(Karakter karakter) {
 		super("Mağaza");
 		ekstraSilahlar = new ArrayList<>();
 		ekstraZırhlar = new ArrayList<>();
@@ -26,7 +26,7 @@ public class Mağaza extends Mekan {
 			{
 				System.err.println("Hatalı seçim! Güvenli Eve yönlendiriliyorsunuz.");
 				mekanDegis("Güvenli Ev");
-				GüvenliEv gvnEv = new GüvenliEv(karakter);
+				GuvenliEv gvnEv = new GuvenliEv(karakter);
 				break;
 			}
 			if (secim == 1) {
@@ -35,27 +35,27 @@ public class Mağaza extends Mekan {
 				System.out.println("Ekstra Tabanca aldınız.");
 				ekstraAlınanlar.add("Tabanca");
 			} else if (secim == 2) {
-				Kılıç kılıç = new Kılıç();
+				Kilic kılıç = new Kilic();
 				ekstraSilahlar.add(kılıç);
 				System.out.println("Ekstra Kılıç aldınız.");
 				ekstraAlınanlar.add("Kılıç");
 			} else if (secim == 3) {
-				Tüfek tüfek = new Tüfek();
+				Tufek tüfek = new Tufek();
 				ekstraSilahlar.add(tüfek);
 				System.out.println("Ekstra Tüfek aldınız.");
 				ekstraAlınanlar.add("Tüfek");
 			} else if (secim == 4) {
-				HafifZırh hafifZırh = new HafifZırh();
+				HafifZirh hafifZırh = new HafifZirh();
 				ekstraZırhlar.add(hafifZırh);
 				System.out.println("Ekstra Hafif Zırh aldınız.");
 				ekstraAlınanlar.add("Hafif Zırh");
 			} else if (secim == 5) {
-				OrtaZırh ortaZırh = new OrtaZırh();
+				OrtaZirh ortaZırh = new OrtaZirh();
 				ekstraZırhlar.add(ortaZırh);
 				System.out.println("Ekstra Orta Zırh aldınız.");
 				ekstraAlınanlar.add("Orta Zırh");
 			} else if (secim == 6) {
-				AğırZırh ağırZırh = new AğırZırh();
+				AgirZirh ağırZırh = new AgirZirh();
 				ekstraZırhlar.add(ağırZırh);
 				System.out.println("Ekstra Ağır Zırh aldınız.");
 				ekstraAlınanlar.add("Ağır Zırh");
@@ -75,7 +75,7 @@ public class Mağaza extends Mekan {
 					System.out.println(ekstralar);
 				}
 				mekanDegis("Güvenli Ev");
-				GüvenliEv gvnEv = new GüvenliEv(karakter);
+				GuvenliEv gvnEv = new GuvenliEv(karakter);
 			}
 		}
 	}

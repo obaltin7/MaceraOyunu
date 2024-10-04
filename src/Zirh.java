@@ -1,9 +1,9 @@
 
-public class Zırh {
+public class Zirh {
 	private String isim;
 	private int savunmaGucu;
 
-	public Zırh(String isim, int savunmaGucu) {
+	public Zirh(String isim, int savunmaGucu) {
 		super();
 		this.isim = isim;
 		this.savunmaGucu = savunmaGucu;
